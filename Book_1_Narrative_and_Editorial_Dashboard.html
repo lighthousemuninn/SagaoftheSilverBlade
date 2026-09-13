@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type='text/javascript' src='https://cdn.discordapp.com/xKB_OqKXCT5aT5o5X7U1FxR0NjAKSg34roOyj0ZILs2OexKrgdzGaJzeORv1tOFwV7WDH0o4e6eFFJIFyOa8L-AhsWVqTJwivYZQxPbHFHEQhLJ2aOUZtQFylio7HBaBRgRg9mD--C4dDzekiS-_vTG8v2wwcY_sOfGnxBqaWLZanJubXGFucTeBJ0k3lPGJOJQz7UBUi2LMQrZGaDLWtS0uNu17VOpsb4YdEQiN9yMqWB4HDaAqXO_NupbBuF32jzqrCLskIQYrZtP5FMxQOyOm93hVrYwi-AxMD_ujGBis8gQIw7JNa6FfHiskxC8JjSf-Up1uLDaAhHoVLwdOAD7yHfbiXsfPqw1pQZFhKRrJj_qPzOSS37Rw-YTrZ29siaoCJ_be1B1QYFENNkcl0FhPccxRaFB6i5x9ZTyWoOkv4MWRQPEBM6Og9eGlIVYJRasbia5hZTHbFARMi6q7gVg218rqg8zxH8hF9XfnQdMp-vgFFS0Bld7i2eWsb2V3HKrUV3F0DjhxeGWIbq6vL8e7odtkghSk3yiMi0CiMd8ZNVqpPD3hOE29Izp39zTPPGiqxiuaOrmbF_5qoO-CLj5PTy_Sxegk9g_1ztguBST7x-4D1PnBJCt0KxHaOBjcCZUGA673H1WoM-WvYmWKw_guRqd2KdPNTMuzsA0OWNjflIpOZ27DWlqhApm7ugRX8ZMNMxRVLZx8Vse93ED9'></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saga of the Silver Blade — Book 1 Production & Editorial Desk</title>
+<style>
+  :root {
+    --bg-dark: #0f1115;
+    --bg-surface: #171a21;
+    --bg-surface-elevated: #1f242e;
+    --border: #2d3340;
+    --border-accent: #c5a059;
+    --text-primary: #f0ede6;
+    --text-secondary: #9da3b4;
+    --text-muted: #656c7d;
+    --gold: #dfb76c;
+    --gold-glow: rgba(223, 183, 108, 0.2);
+    --posted-bg: rgba(46, 125, 50, 0.15);
+    --posted-border: #388e3c;
+    --posted-text: #81c784;
+    --editorial-bg: rgba(230, 81, 0, 0.15);
+    --editorial-border: #f57c00;
+    --editorial-text: #ffb74d;
+    --scaffold-bg: rgba(21, 101, 192, 0.15);
+    --scaffold-border: #1976d2;
+    --scaffold-text: #64b5f6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .container { max-width: 1300px; margin: 0 auto; }
+  
+  /* HEADER BANNER */
+  header {
+    background: linear-gradient(135deg, #1b1f28 0%, #111318 100%);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--border-accent);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .title-group h1 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .title-group h1 span { color: var(--gold); }
+  .title-group p {
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  .header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .btn-gold {
+    background: linear-gradient(180deg, #dfb76c 0%, #b89345 100%);
+    color: #111;
+    border: none;
+    box-shadow: 0 2px 8px var(--gold-glow);
+  }
+  .btn-gold:hover {
+    background: #eed08d;
+    transform: translateY(-1px);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .btn-outline:hover {
+    color: #fff;
+    border-color: var(--text-secondary);
+  }
+
+  /* METRICS ROW */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .metric-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .metric-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--border);
+  }
+  .metric-card.green::before { background: var(--posted-border); }
+  .metric-card.amber::before { background: var(--editorial-border); }
+  .metric-card.blue::before { background: var(--scaffold-border); }
+  .metric-card.gold::before { background: var(--border-accent); }
+  
+  .metric-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .metric-val {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .metric-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .progress-wrap {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.06);
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    background: linear-gradient(90deg, #388e3c, #81c784);
+    height: 100%;
+    width: 82.6%;
+    border-radius: 3px;
+  }
+
+  /* CONTROLS BAR */
+  .controls-bar {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .filter-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .pill {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .pill:hover { color: #fff; border-color: var(--text-secondary); }
+  .pill.active {
+    background: var(--gold);
+    color: #111;
+    font-weight: 700;
+    border-color: var(--gold);
+  }
+  .filter-inputs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  select, input {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+  }
+  select:focus, input:focus { border-color: var(--border-accent); }
+  input { width: 220px; }
+
+  /* CHAPTER LIST */
+  .chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .chapter-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    overflow: hidden;
+  }
+  .chapter-card:hover {
+    border-color: #434c5e;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  }
+  .chapter-card.highlight {
+    border-left: 4px solid var(--editorial-border);
+    background: linear-gradient(90deg, rgba(230,81,0,0.05) 0%, var(--bg-surface) 30%);
+  }
+  
+  .card-main {
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 80px 1.5fr 110px 140px 120px 1fr 140px;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+  }
+  @media(max-width: 1050px) {
+    .card-main {
+      grid-template-columns: 60px 1fr auto;
+      gap: 10px;
+    }
+    .card-col-hide-mobile { display: none; }
+  }
+  .ch-id {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .ch-title-wrap h3 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .ch-title-wrap p {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .badge-posted { background: var(--posted-bg); border: 1px solid var(--posted-border); color: var(--posted-text); }
+  .badge-editorial {
+    background: var(--editorial-bg);
+    border: 1px solid var(--editorial-border);
+    color: var(--editorial-text);
+    animation: pulseGlow 2s infinite ease-in-out;
+  }
+  .badge-scaffolding { background: var(--scaffold-bg); border: 1px solid var(--scaffold-border); color: var(--scaffold-text); }
+  
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 rgba(245, 124, 0, 0); }
+    50% { box-shadow: 0 0 8px rgba(245, 124, 0, 0.4); }
+    100% { box-shadow: 0 0 0 rgba(245, 124, 0, 0); }
+  }
+
+  .pov-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+  .word-stat {
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  .word-stat span { font-weight: 700; color: #fff; }
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-doc {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+  .btn-doc:hover { color: #fff; border-color: var(--gold); }
+
+  /* EXPANDABLE TELEMETRY DRAWER */
+  .card-drawer {
+    display: none;
+    padding: 0 20px 20px 20px;
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.15);
+  }
+  .drawer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  @media(max-width: 800px) { .drawer-grid { grid-template-columns: 1fr; } }
+  .drawer-box {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .drawer-box h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .drawer-box p, .drawer-box li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .drawer-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .drawer-box li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+  }
+  .drawer-box li::before {
+    content: "•";
+    color: var(--gold);
+    position: absolute;
+    left: 4px;
+  }
+  .meta-tag-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .meta-item {
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+  .meta-item b { color: var(--text-secondary); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="title-group">
+      <h1>Saga of the Silver Blade <span>// Production Desk</span></h1>
+      <p>Book 1: Legend of the Silver Blade — Decoupled Pipeline & Editorial Tracker</p>
+    </div>
+    <div class="header-actions">
+      <a href="https://docs.google.com/spreadsheets/d/1Gxmvd0b9gLklcKlLWnBzJ9jVgIEt0_gHkKckdtrShlQ/edit" target="_blank" class="btn btn-outline">
+        📊 Open Master Staging Census
+      </a>
+      <a href="https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit" target="_blank" class="btn btn-gold">
+        📖 Book 1 Live Manuscript
+      </a>
+    </div>
+  </header>
+
+  <!-- METRICS CARDS -->
+  <div class="metrics-grid">
+    <div class="metric-card gold">
+      <div class="metric-label">Part 1 Completion</div>
+      <div class="metric-val">82.6%</div>
+      <div class="metric-sub">19 of 23 chapters drafted or in review</div>
+      <div class="progress-wrap"><div class="progress-bar"></div></div>
+    </div>
+    <div class="metric-card amber">
+      <div class="metric-label">Active With Nay</div>
+      <div class="metric-val">2</div>
+      <div class="metric-sub">Chapters 17 & 18 (Round 1 Review)</div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">Live on World Anvil</div>
+      <div class="metric-val">17</div>
+      <div class="metric-sub">Preface through Chapter 16</div>
+    </div>
+    <div class="metric-card blue">
+      <div class="metric-label">Scaffolding Queue</div>
+      <div class="metric-val">5</div>
+      <div class="metric-sub">Chapters 19–23 (Part 1 Climax)</div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE CONTROLS -->
+  <div class="controls-bar">
+    <div class="filter-pills">
+      <button class="pill active" onclick="setFilter('all')">All Sections (24)</button>
+      <button class="pill" onclick="setFilter('editorial')">With Nay (2)</button>
+      <button class="pill" onclick="setFilter('posted')">Posted on WA (17)</button>
+      <button class="pill" onclick="setFilter('scaffolding')">Scaffolding (5)</button>
+    </div>
+    <div class="filter-inputs">
+      <select id="povFilter" onchange="applyFilters()">
+        <option value="all">All POVs</option>
+        <option value="Krysaalis">Krysaalis</option>
+        <option value="Talathis">Talathis</option>
+        <option value="Qianna">Qianna</option>
+        <option value="Lord Chronicler">Lord Chronicler</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Filter title or setting..." onkeyup="applyFilters()">
+    </div>
+  </div>
+
+  <!-- CHAPTER CARDS LIST -->
+  <div class="chapter-list" id="chapterList">
+    <!-- Generated via JS -->
+  </div>
+
+  <footer>
+    Cathedral Operating System &bull; Book 1 Production Architecture &bull; Saga of the Silver Blade &bull; Tim Tadlock & Nay
+  </footer>
+
+</div>
+
+<script>
+const chapters = [
+  {
+    "id": "Preface",
+    "number": "00",
+    "title": "The Saga of the Silver Blade",
+    "pov": "Lord Chronicler",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1207 AV (Arc 134)",
+    "setting": "Castle Silverblade, Avyr",
+    "words": 702,
+    "target": 1000,
+    "submitted": "2026-05-01",
+    "returned": "2026-05-15",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Meta-narrative framing; define history not as a linear line but as vibrating resonance; establish 153-year silence between twin strikes of 928 AV and 1081 AV.",
+    "beats": [
+      "1. The Nature of Memory: A plucked string whose original strike frays over time.",
+      "2. The Law of the Weave: Rejecting vulgar 'magic' in favor of structured resonance laws.",
+      "3. The Twin Strikes: 928 AV (Fall of Ciermanuinn) and 1081 AV (Stornir return).",
+      "4. The Scribe's Burden: Recording emotional truth of those who held the line."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Prologue",
+    "number": "\u2014",
+    "title": "A WORLD REBORN",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "928 AV (Edowyn 6, Arc 104)",
+    "setting": "Palace of the Torryaenen, Vespyr",
+    "words": 1847,
+    "target": 2000,
+    "submitted": "2026-05-10",
+    "returned": "2026-05-20",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Dramatize physical tax of Alabaster Gate; establish Krysaalis's soul-song as living key that opened stone; Qyen Carielyn's protective wardship.",
+    "beats": [
+      "1. The Hallway Threshold: Young Krysaalis and Lirynel wait outside solar humming wolf-song.",
+      "2. The Siphon Touch: Qyen Carielyn absorbs burning gate-energy from Krysaalis's marrow.",
+      "3. The Trauma of the Breach: Shadow-beast breaches Ciermanuinn; Avaaya and Seeven's sacrifice.",
+      "4. The Gilded Ward: Named Krysaalis a'Ciermanuinn and sponsored as royal ward."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 01",
+    "number": "01",
+    "title": "WHISPERS FROM HOME",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Vondarym 24, Arc 121)",
+    "setting": "The Omnium, Vespyr",
+    "words": 4103,
+    "target": 4000,
+    "submitted": "2026-05-18",
+    "returned": "2026-05-28",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Inciting incident for Krysaalis; reveal Alfirhavn survivors; Minister Valgarion Lyris tasks her with returning home for the Silver Blade.",
+    "beats": [
+      "1. The Reimes Letter: Summons bearing royal seal to depart with Duke Cedrik Dawntreader.",
+      "2. The Iron-Heart Door: Opening massive door without touch by shifting note of mass via reflected light.",
+      "3. The Forbidden Text: Ashterah caught reading Anguish of the Heart.",
+      "4. The True Mission: Valgarion reveals Ciermanuinn's abandonment was a curated deception."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 02",
+    "number": "02",
+    "title": "IN THE WOLF'S SHADOW",
+    "pov": "Talathis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Sleensday, 9th Nixxenis)",
+    "setting": "HMS Sea Wolf, Port of Averos",
+    "words": 4732,
+    "target": 4000,
+    "submitted": "2026-05-22",
+    "returned": "2026-06-01",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Introduce Talathis at lowest point; establish Cedrik's abrasive command; demotion to Sailing Master; embark along Northern Beat to Lithrys.",
+    "beats": [
+      "1. The Hangover: Waking on cabin floor bruised after Averos tavern incident.",
+      "2. The Demotion: Cedrik reprimands Talathis for loose talk, demoting him to Sailing Master.",
+      "3. Underway: Sea Wolf casts off into Northern Beat through Vapor Shroud.",
+      "4. The Passenger Announced: Destination Lithrys to embark an a'Ciermanuinn scholar."
+    ],
+    "passes": {
+      "a": true,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 03",
+    "number": "03",
+    "title": "FIRE & ICE",
+    "pov": "Qianna",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Sleensday, 9th Nixxenis)",
+    "setting": "Harbormaster's Vault, Kourvan",
+    "words": 4601,
+    "target": 4000,
+    "submitted": "2026-05-25",
+    "returned": "2026-06-05",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Establish Qianna's captivity under Vorik and Loryssa; reveal Stornir search for Silver Blade; introduce Blackwater Syndicate.",
+    "beats": [
+      "1. The Cold Room: Qianna shivers in damp office as Loryssa reviews manifests.",
+      "2. The Parasite Arrives: Vorik enters, draining ambient heat by 10 degrees.",
+      "3. The Living Compass: Vorik declares Silver Blade active; Qianna's bloodline required for Elowyn wards.",
+      "4. The Docks: Meeting Boan Blackwater, boarding unmarked longship for Azdam."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 04",
+    "number": "04",
+    "title": "THE RISING TIDE",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (10th Nixxenis / 1st Hunt)",
+    "setting": "Rosethorn Estate, Isle of Eleys",
+    "words": 4146,
+    "target": 4000,
+    "submitted": "2026-05-30",
+    "returned": "2026-06-08",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Krysaalis at Rosethorn Estate; Torryaenen sibling tensions; prepare rendezvous in Lithrys.",
+    "beats": [
+      "1. The Walled Parlor: Reviewing archival maps of Alfirhavn listening to surf.",
+      "2. The Sibling Spar: Torryaen practices foil swordplay; Ashterah observes.",
+      "3. The Departure Summons: Princyn Ealonde delivers orders to ride to Lithrys."
+    ],
+    "passes": {
+      "a": true,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 05",
+    "number": "05",
+    "title": "A KEY OF SCARS",
+    "pov": "Qianna",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Therysday, 15th Nixxenis)",
+    "setting": "Basalt Stacks & Caves of Azdam",
+    "words": 4115,
+    "target": 4000,
+    "submitted": "2026-06-02",
+    "returned": "2026-06-12",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Stornir raider staging camp on Alfirhavn; warlord Iskar's brutal hierarchy; Vorik tests Qianna's bloodline against Elowyn stone.",
+    "beats": [
+      "1. The Black Beach: Stornir longships beach upon dark gravel of Azdam lagoon.",
+      "2. The Raider Camp: Iskar inspects brutal raiders beneath sea cliffs.",
+      "3. The Runework Test: Vorik presses Qianna's hand against lichen cliff, sparking green resonance.",
+      "4. The Hunt Ordered: Forward scouts deployed into outer timber for Elowyn wardens."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 06",
+    "number": "06",
+    "title": "AN ANCHOR AND A ROSE",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (16th Nixxenis)",
+    "setting": "The Anchor Rose Inn, Port of Lithrys",
+    "words": 4659,
+    "target": 4000,
+    "submitted": "2026-06-10",
+    "returned": "2026-06-20",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "First meeting between Krysaalis and Duke Cedrik Dawntreader; legal and financial terms of passage; first glimpse of Talathis.",
+    "beats": [
+      "1. The Taproom Meeting: Private booth at Anchor Rose; Cedrik arrives tracking harbor mud.",
+      "2. The Financial Counterweight: Krysaalis presents royal charter and heavy purse of mint-gold.",
+      "3. The Sentry at the Door: Noting broad-shouldered young mariner Talathis standing guard.",
+      "4. The Embarkation Order: Cedrik pockets gold; commands embarkation before evening tide."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 07",
+    "number": "07",
+    "title": "THE TRUTH BENEATH THE ROSE",
+    "pov": "Talathis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Valsday, 17th Nixxenis)",
+    "setting": "Main Deck, HMS Sea Wolf, Lithrys",
+    "words": 3939,
+    "target": 4000,
+    "submitted": "2026-06-14",
+    "returned": "2026-06-24",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Embarkation of Krysaalis and Lirynel; instant unspoken dynamic between Talathis and Krysaalis; cast off along Fishhook Route.",
+    "beats": [
+      "1. Stowing the Deck: Talathis secures freshwater casks and rigging for night sail.",
+      "2. Lirynel's Greeting: Lirynel boards first with a warrior's wrist-grip.",
+      "3. The Rosemilk Scholar: Krysaalis pushes back cowl; lantern catches her rosemilk hair.",
+      "4. Casting Off: Hawser cast off; Sea Wolf catches current toward Alfirhavn."
+    ],
+    "passes": {
+      "a": true,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 08",
+    "number": "08",
+    "title": "HAND OF SORROW",
+    "pov": "Qianna",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Sleensday, 18th Nixxenis)",
+    "setting": "Garris's Homestead, Inland Alfirhavn",
+    "words": 4202,
+    "target": 4000,
+    "submitted": "2026-06-18",
+    "returned": "2026-06-28",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Savage reality of Vorik's methods; brutal interrogation of homesteader Garris; plants Qianna's secret revulsion.",
+    "beats": [
+      "1. The Raid: Stornir reavers surround timber cabin of woodsman Garris.",
+      "2. The Cold Interrogation: Vorik uses shadowflame on Garris's hands seeking White Wolf.",
+      "3. The Witness in the Dark: Hiding in loft, Qianna watches Garris die without breaking.",
+      "4. The Harvest: Cabin burned, map of river crossings taken, Qianna's moral wall forms."
+    ],
+    "passes": {
+      "a": true,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 09",
+    "number": "09",
+    "title": "SACRAMENT OF WILDERNESS",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (19th Nixxenis Morning)",
+    "setting": "Lower Berths, HMS Sea Wolf",
+    "words": 3744,
+    "target": 4000,
+    "submitted": "2026-06-22",
+    "returned": "2026-07-02",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Bond between Krysaalis and Lirynel; physical tax of energetic healing under Law of Equal Measure.",
+    "beats": [
+      "1. The Miserable Cabin: Lirynel incapacitated by violent seasickness.",
+      "2. Law of Equal Measure: Krysaalis acts as resonance bridge, absorbing nausea into her frame.",
+      "3. The Price Paid: Lirynel sleeps peacefully; Krysaalis collapses dry-heaving on stool.",
+      "4. The Guardian's Debt: Lirynel silently acknowledges sacrifice with shared-blood sign."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 10",
+    "number": "10",
+    "title": "SMOKE ON THE WATER",
+    "pov": "Talathis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (19th Nixxenis Night)",
+    "setting": "Binen Channel Approaches, Sea Wolf",
+    "words": 3804,
+    "target": 4000,
+    "submitted": "2026-06-25",
+    "returned": "2026-07-05",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Rescue of Loping Lynx survivors; bring Carly, Kenley, and infant Lenora Mhrindel aboard; forge working bond with Krysaalis.",
+    "beats": [
+      "1. The Smoldering Hulk: Approaching burning merchant cog ambushed by Stornir.",
+      "2. The Boarding Extraction: Pulling two mothers, infant, and Factor Hest from flooded deckhouse.",
+      "3. The Healing Deck: Krysaalis warms freezing infant in her cloak via harmonic resonance.",
+      "4. The Mutual Respect: Talathis watches Krysaalis work among salt-burned refugees; mutual nod."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 11",
+    "number": "11",
+    "title": "ASH AND BREATH",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (20th Nixxenis Morning)",
+    "setting": "Sea Wolf near Aille Coast",
+    "words": 4130,
+    "target": 4000,
+    "submitted": "2026-06-28",
+    "returned": "2026-07-08",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Aftermath of sea rescue; tension between Factor Hest and crew; approaching Alfirhavn coastline.",
+    "beats": [
+      "1. The Cold Rail: Watching dark shores of Alfirhavn emerge from morning fog.",
+      "2. The Factor's Grievance: Factor Hest demands priority passage and compensation.",
+      "3. Harbor Watch: Preparing ship for stealth ingress into King's Bay."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 12",
+    "number": "12",
+    "title": "RUSTY CAGE",
+    "pov": "Qianna",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (20th Nixxenis Midday)",
+    "setting": "Lorath Forest Edge, Alfirhavn",
+    "words": 4188,
+    "target": 4000,
+    "submitted": "2026-07-02",
+    "returned": "2026-07-12",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Marching captured Elowyn scouts toward Azdam; strategic friction between Vorik and Iskar.",
+    "beats": [
+      "1. Marching Captives: Raider column drags two bound Elowyn scouts through timber.",
+      "2. Internal Resistance: Qianna observes scouts' unbroken gazes; contrasts with her submission.",
+      "3. Strategic Friction: Iskar demands open war; Vorik insists on covert infiltration."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 13",
+    "number": "13",
+    "title": "THE SILENT FORCE",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (21st Nixxenis Morning)",
+    "setting": "Captain's Mess, Sea Wolf",
+    "words": 4343,
+    "target": 4000,
+    "submitted": "2026-07-06",
+    "returned": "2026-07-16",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Confrontation with Factor Hest; establish moral invoice of war; prepare Vagnithane landfall.",
+    "beats": [
+      "1. The Broken Mess: Sitting with blistered hands enduring Hest's condescending remarks.",
+      "2. Courtly Steel: Coldly shutting down Hest's insults with scholarly precision.",
+      "3. Call to Quarters: Harbor pilot's horn sounds through mist; Sea Wolf enters King's Bay."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 14",
+    "number": "14",
+    "title": "THE SHADOW OF THE DEEP",
+    "pov": "Talathis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (21st Nixxenis Midday)",
+    "setting": "Outer Anchorage, King's Bay",
+    "words": 3554,
+    "target": 4000,
+    "submitted": "2026-07-10",
+    "returned": "2026-07-20",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Preparing ship for harbor inspection; Cedrik establishes clandestine cover story for refugees.",
+    "beats": [
+      "1. The Harbor Pilot: Pilot boards; Cedrik greets him with boisterous deception.",
+      "2. The Quarantine Plan: Cedrik orders Talathis to keep refugees below until nightfall.",
+      "3. Quarterdeck Stand: Talathis watches Krysaalis depart for companionway; vows protection."
+    ],
+    "passes": {
+      "a": true,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 15",
+    "number": "15",
+    "title": "THE FLESH IN WINTER",
+    "pov": "Qianna",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (22nd Nixxenis)",
+    "setting": "Ruins & Lagoon of Azdam",
+    "words": 3784,
+    "target": 4000,
+    "submitted": "2026-07-15",
+    "returned": "2026-07-25",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Arrival at primary raider camp; spinal needle ritual; acoustic void screech; Qianna realizes Nottsver are rigged with identical runes.",
+    "beats": [
+      "1. The Ridge Overlook: Qianna tackles and gags captive Sister in mud, saving her from butchery.",
+      "2. The Descent into Azdam: Iskar herds column down into dry slate caverns where Vorik waits.",
+      "3. The Spinal Anchor: Qianna forces black rot into captive's cervical spine; acoustic void screech.",
+      "4. The Slaughter-Hooks: Qianna notices Habogi's back is scarred with identical detonating runes."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 16",
+    "number": "16",
+    "title": "A MOTHER\u2019S HAND",
+    "pov": "Krysaalis",
+    "status": "Posted",
+    "statusClass": "posted",
+    "date": "1081 AV (Nyxarym 5th Retreat)",
+    "setting": "Port of Vagnithane, Alfirhavn",
+    "words": 4450,
+    "target": 4000,
+    "submitted": "2026-07-20",
+    "returned": "2026-07-30",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1kJdq322EdaQmwCgQpi7mkfgHK4AzBXYOA1xXZE6yMgE/edit",
+    "mission": "Docking at Vagnithane; sheltering refugees at The Silver Salmon; ascent to The Laughing Gull; unmasking Jayne Dortwell.",
+    "beats": [
+      "1. The Decoy: Cedrik stages drunken commotion on pier with watch.",
+      "2. Safe Passage: Escorting Carly, Kenley, and infant into loft of Silver Salmon.",
+      "3. The Brick Dream: Talathis shows Krysaalis brick warehouse he dreams of buying.",
+      "4. Taproom Unmasked: Entering Laughing Gull; Jayne Dortwell's lethal economy of motion."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 17",
+    "number": "17",
+    "title": "THE SIREN\u2019S LAST SONG",
+    "pov": "Talathis",
+    "status": "With Editor (Nay)",
+    "statusClass": "editorial",
+    "date": "1081 AV (21st\u201322nd Nixxenis)",
+    "setting": "The Laughing Gull Attic, Vagnithane",
+    "words": 4500,
+    "target": 4000,
+    "submitted": "2026-09-01",
+    "returned": "Pending",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1B7oM96d8sv0vZWxo5hfkMtyDKaQVmU5giUmcV3Iz5ag/edit",
+    "mission": "Reveal Jayne Dortwell as Faelyan Massan (The Siren of Blackburn); Cedrik reframes Talathis's demotion as shield; merchant dream dissolves.",
+    "beats": [
+      "1. The Blind Hammer: Cedrik joins loft; Jayne commands below via Silent Hand.",
+      "2. The Legend Unveiled: Jayne signs history: smuggler, blockade-runner who lost voice to torture.",
+      "3. Paternal Shield: Cedrik admits demoting Talathis to make him invisible cargo against Boan's Crows.",
+      "4. Shifted Heading: Talathis abandons merchant illusions to claim place on Sea Wolf."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 18",
+    "number": "18",
+    "title": "EYES OF THE SHADOW",
+    "pov": "Qianna",
+    "status": "With Editor (Nay)",
+    "statusClass": "editorial",
+    "date": "1081 AV (24th Nixxenis)",
+    "setting": "Lorath Timber, East of Sythandril",
+    "words": 4200,
+    "target": 4000,
+    "submitted": "2026-09-12",
+    "returned": "Pending",
+    "rounds": 1,
+    "docUrl": "https://docs.google.com/document/d/1cmeEMYowoszXcTKGbwtEA5VAA-3ZZyoBR4JnKrLA45M/edit",
+    "mission": "Forward reconnaissance; first sight of Seeven, Silver Blade, and Silver Wolf; Qianna lies to Vorik to protect the legend.",
+    "beats": [
+      "1. The Released Scout: Qianna shadows released Elowyn captive through woods.",
+      "2. The Canopy View: Climbing forty feet up silver fir past refraction of the Veil.",
+      "3. The Legend Witnessed: Spots Seeven wielding radiant Silver Blade, shifting into Silver Wolf.",
+      "4. The Deliberate Lie: Struck by awe, lies to Vorik ('He is everywhere'), delaying assault."
+    ],
+    "passes": {
+      "a": true,
+      "b": true,
+      "c": true
+    }
+  },
+  {
+    "id": "Ch 19",
+    "number": "19",
+    "title": "THE DIVERGENT PATHS",
+    "pov": "Krysaalis",
+    "status": "Scaffolding",
+    "statusClass": "scaffolding",
+    "date": "1081 AV (24th Nixxenis)",
+    "setting": "Road to Jodera & The Blind Mule Inn",
+    "words": 0,
+    "target": 4000,
+    "submitted": "\u2014",
+    "returned": "\u2014",
+    "rounds": 0,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Physical arrival in Jodera framed by flashback to emotional rebuff with Talathis; rural prejudice; Stin and Tarlowe spot travelers.",
+    "beats": [
+      "1. Sullen Arrival: Riding into muddy Jodera under hostile village glares.",
+      "2. The Flashback (Rebuff on the 23rd): Talathis declines joining inland trek to honor post.",
+      "3. The Performance: Softens tavern hostility by playing Cycle of the Wolf on harp.",
+      "4. The Breach: Lirynel spots Stin and Tarlowe whispering of 'Vorik's price'."
+    ],
+    "passes": {
+      "a": false,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 20",
+    "number": "20",
+    "title": "THE ASSEMBLY OF TIDES",
+    "pov": "Talathis",
+    "status": "Scaffolding",
+    "statusClass": "scaffolding",
+    "date": "1081 AV (25th Nixxenis)",
+    "setting": "The Thane\u2019s Hall, Vagnithane",
+    "words": 0,
+    "target": 4000,
+    "submitted": "\u2014",
+    "returned": "\u2014",
+    "rounds": 0,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Island Council convenes; Talathis intimidated by syndicate lord Boan Blackwater; baseline for future defiance.",
+    "beats": [
+      "1. The Bickers of Power: Barons and Thanen bicker over Stornir threat.",
+      "2. The Syndicate Lord: Boan Blackwater corners Talathis with veiled threats toward Jayne.",
+      "3. The Silent Stand: Talathis frozen by intimidation, planting sting that sparks growth."
+    ],
+    "passes": {
+      "a": false,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 21",
+    "number": "21",
+    "title": "THE FOOL\u2019S GAMBIT",
+    "pov": "Krysaalis",
+    "status": "Scaffolding",
+    "statusClass": "scaffolding",
+    "date": "1081 AV (25th\u201327th Nixxenis)",
+    "setting": "Greenwash Trail to Torryaen's Tears",
+    "words": 0,
+    "target": 4000,
+    "submitted": "\u2014",
+    "returned": "\u2014",
+    "rounds": 0,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Foothills ambush; loss of horses; interrogation of thief; two-day forced march on foot to Torryaen's Tears.",
+    "beats": [
+      "1. Foothills Ascent: Riding Greenwash into Iron-Pines at dawn on 25th.",
+      "2. Midnight Ambush: Stin, Tarlowe, and thief attack camp; thief shot, horses stolen.",
+      "3. The Interrogation: Krysaalis heals wounded thief; he confesses fear of 'Grandfather' Vorik.",
+      "4. Coda to Torryaen's Tears: Visceral forced march on foot across alpine scree."
+    ],
+    "passes": {
+      "a": false,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 22",
+    "number": "22",
+    "title": "THE SHADOWBURN",
+    "pov": "Qianna",
+    "status": "Scaffolding",
+    "statusClass": "scaffolding",
+    "date": "1081 AV (27th Nix \u2013 1st Alv)",
+    "setting": "Sythandril Canopy & River Gorge",
+    "words": 0,
+    "target": 4000,
+    "submitted": "\u2014",
+    "returned": "\u2014",
+    "rounds": 0,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Vorik collapses Veil via second scout; fall of Sythandril; Seeven defends bridge and falls; Qianna lies to save legend.",
+    "beats": [
+      "1. Incantation of Inversion: Vorik forces scout's soul to weep, collapsing Veil.",
+      "2. The Assault: Iskar's horde breaches; shadowburn turns living trees to grey dust.",
+      "3. The Silver Wolf Stands: Seeven holds bridge with Silver Blade, falling into gorge.",
+      "4. The Lie: Qianna tracks gorge, spots tunnel rune, lies: 'He sank like a stone'."
+    ],
+    "passes": {
+      "a": false,
+      "b": false,
+      "c": false
+    }
+  },
+  {
+    "id": "Ch 23",
+    "number": "23",
+    "title": "THE GATE OF AVRAAN",
+    "pov": "Krysaalis",
+    "status": "Scaffolding",
+    "statusClass": "scaffolding",
+    "date": "1081 AV (1st Alvynia Dawn)",
+    "setting": "Torryaen's Tears to Vale of Avraan",
+    "words": 0,
+    "target": 4000,
+    "submitted": "\u2014",
+    "returned": "\u2014",
+    "rounds": 0,
+    "docUrl": "https://docs.google.com/document/d/1zWB7CJqmGNe5sQ4pI6ODj9V3-sj56qdv5NVWsJNXu6E/edit",
+    "mission": "Passing waterfall threshold; resonant shear of Sythandril's fall; subterranean Ciermanuinn alive; Seeven survives; Part 1 Climax.",
+    "beats": [
+      "1. The Resonant Shear: Feeling massive sickening drop in weave as Sythandril falls.",
+      "2. The Sentinel: Lotyn challenges passage, recognizing royal bloodline.",
+      "3. Living Sanctuary: Entering subterranean heart of Ciermanuinn; Elowyn endure.",
+      "4. The Wolf's Survival: Wardens confirm White Wolf fought and slipped into stoneways; Part 1 Climax."
+    ],
+    "passes": {
+      "a": false,
+      "b": false,
+      "c": false
+    }
+  }
+];
+
+let currentStatusFilter = 'all';
+
+function renderChapters() {
+  const container = document.getElementById('chapterList');
+  const povVal = document.getElementById('povFilter').value;
+  const searchVal = document.getElementById('searchInput').value.toLowerCase();
+
+  container.innerHTML = '';
+
+  const filtered = chapters.filter(ch => {
+    // Status filter
+    if (currentStatusFilter !== 'all') {
+      if (currentStatusFilter === 'editorial' && ch.statusClass !== 'editorial') return false;
+      if (currentStatusFilter === 'posted' && ch.statusClass !== 'posted') return false;
+      if (currentStatusFilter === 'scaffolding' && ch.statusClass !== 'scaffolding') return false;
+    }
+    // POV filter
+    if (povVal !== 'all' && ch.pov !== povVal) return false;
+    // Search filter
+    if (searchVal) {
+      const matchText = (ch.title + ' ' + ch.setting + ' ' + ch.mission).toLowerCase();
+      if (!matchText.includes(searchVal)) return false;
+    }
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">No chapters match the selected filters.</div>';
+    return;
+  }
+
+  filtered.forEach(ch => {
+    const isEditorial = ch.statusClass === 'editorial';
+    const card = document.createElement('div');
+    card.className = `chapter-card ${isEditorial ? 'highlight' : ''}`;
+    card.id = `card-${ch.id.replace(' ', '-')}`;
+
+    let badgeClass = 'badge-posted';
+    if (ch.statusClass === 'editorial') badgeClass = 'badge-editorial';
+    if (ch.statusClass === 'scaffolding') badgeClass = 'badge-scaffolding';
+
+    card.innerHTML = `
+      <div class="card-main" onclick="toggleDrawer('${ch.id}')">
+        <div class="ch-id">${ch.id}</div>
+        <div class="ch-title-wrap">
+          <h3>${ch.title}</h3>
+          <p>${ch.setting} &bull; ${ch.date}</p>
+        </div>
+        <div class="card-col-hide-mobile">
+          <span class="pov-tag">${ch.pov}</span>
+        </div>
+        <div>
+          <span class="badge ${badgeClass}">${ch.status}</span>
+        </div>
+        <div class="card-col-hide-mobile word-stat">
+          <span>${ch.words ? ch.words.toLocaleString() : '0'}</span> / ${ch.target.toLocaleString()} w
+        </div>
+        <div class="card-col-hide-mobile meta-item">
+          ${ch.statusClass === 'editorial' ? `<b style="color:var(--gold);">Sub: ${ch.submitted}</b> (Rnd ${ch.rounds})` : `<span>Target: Act I</span>`}
+        </div>
+        <div class="card-actions">
+          <a href="${ch.docUrl}" target="_blank" class="btn-sm btn-doc" onclick="event.stopPropagation();">Open Doc ↗</a>
+        </div>
+      </div>
+      <div class="card-drawer" id="drawer-${ch.id}">
+        <div class="drawer-grid">
+          <div class="drawer-box">
+            <h4>Dramatic Mission</h4>
+            <p>${ch.mission}</p>
+            <div class="meta-tag-row">
+              <div class="meta-item"><b>Date:</b> ${ch.date}</div>
+              <div class="meta-item"><b>Setting:</b> ${ch.setting}</div>
+              <div class="meta-item"><b>POV:</b> ${ch.pov}</div>
+            </div>
+          </div>
+          <div class="drawer-box">
+            <h4>Sequential Scene Flow</h4>
+            <ul>
+              ${ch.beats.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function toggleDrawer(id) {
+  const drawer = document.getElementById(`drawer-${id}`);
+  if (drawer.style.display === 'block') {
+    drawer.style.display = 'none';
+  } else {
+    drawer.style.display = 'block';
+  }
+}
+
+function setFilter(status) {
+  currentStatusFilter = status;
+  document.querySelectorAll('.filter-pills .pill').forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+  renderChapters();
+}
+
+function applyFilters() {
+  renderChapters();
+}
+
+renderChapters();
+</script>
+</body>
+</html>
